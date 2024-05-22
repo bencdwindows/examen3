@@ -28,7 +28,7 @@ public class CCuenta {
     public int ingresar(double cantidad) {
         int iCodErr;
 
-        if ((cantidad <= 0 || cantidad > 3000)) {
+        if ((cantidad <= 0 || cantidad > 3000)) { //Modificación de la condición para que funcione
             System.out.println("No se puede ingresar una cantidad negativa ni superior a 3000€ (sin ser notificada con formulario)");
             iCodErr = 1;
         } else if (cantidad == 3000) {
